@@ -1,0 +1,59 @@
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    grid-template-rows: repeat(3, min-content);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 100px;
+}
+
+.board-piece {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100px;
+    width: 100px;
+}
+
+#square1 {
+    border-bottom: 1px solid black;
+    border-right:  1px solid black;
+}
+
+#square2 {
+    border-bottom: 1px solid black;
+}
+
+#square3 {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#square4 {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#square5 {
+    border-bottom: 1px solid black;
+}
+
+#square6 {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+#square7 {
+    border-right: 1px solid black;
+}
+
+#square9 {
+    border-left: 1px solid black;
+}
