@@ -1,7 +1,7 @@
 const gameBoard = (() => {
     const boardArray = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
 
-    function CheckWinner(){
+    const CheckWinner = () => {
         if ((squareOne.textContent === 'x' && squareTwo.textContent === 'x' && squareThree.textContent === 'x') || (squareOne.textContent === 'x' && squareFour.textContent === 'x' && squareSeven.textContent === 'x') ||
          (squareOne.textContent === 'x' && squareFive.textContent === 'x' && squareNine.textContent === 'x') || 
          (squareTwo.textContent === 'x' && squareFive.textContent === 'x' && squareEight.textContent === 'x') ||
@@ -77,11 +77,13 @@ const gameBoard = (() => {
         squareNine.textContent = boardArray[8]}
 
     return { 
-        gameBoardFill
+        gameBoardFill,
+        CheckWinner
     };
 })();
 
 gameBoard.gameBoardFill();
+gameBoard.CheckWinner();
 
 const playerNames = (() => {
     let playerone = prompt('Player one name');

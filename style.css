@@ -57,3 +57,8 @@ body {
 #square9 {
     border-left: 1px solid black;
 }
+
+input[type="button"] {
+    margin-left: 120px;
+    margin-bottom: 100px;
+}
